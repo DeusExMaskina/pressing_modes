@@ -1,0 +1,199 @@
+{
+    "thin_plates": {
+        "V-5": {
+            "name": "\u0412 5",
+            "summer_total_time": 225,
+            "winter_total_time": 210,
+            "heat": 20,
+            "pressing": 90,
+            "air_cooling": 40,
+            "winter_water_cooling": 55,
+            "summer_water_cooling": 70
+        },
+        "V-6": {
+            "name": "\u0412 6",
+            "summer_total_time": 245,
+            "winter_total_time": 230,
+            "heat": 20,
+            "pressing": 105,
+            "air_cooling": 40,
+            "winter_water_cooling": 65,
+            "summer_water_cooling": 80
+        },
+        "V-10": {
+            "name": "\u0412 10",
+            "summer_total_time": 270,
+            "winter_total_time": 255,
+            "heat": 20,
+            "pressing": 115,
+            "air_cooling": 40,
+            "winter_water_cooling": 80,
+            "summer_water_cooling": 95
+        },
+        "BV-15": {
+            "name": "\u0411 15, \u0412 15",
+            "summer_total_time": 290,
+            "winter_total_time": 275,
+            "heat": 20,
+            "pressing": 105,
+            "air_cooling": 50,
+            "winter_water_cooling": 100,
+            "summer_water_cooling": 115
+        },
+        "BV-20": {
+            "name": "\u0411 20, \u0412 20",
+            "summer_total_time": 340,
+            "winter_total_time": 325,
+            "heat": 20,
+            "pressing": 125,
+            "air_cooling": 65,
+            "winter_water_cooling": 115,
+            "summer_water_cooling": 130
+        },
+        "BV-25": {
+            "name": "\u0411 25, \u0412 25",
+            "summer_total_time": 260,
+            "winter_total_time": 245,
+            "heat": 20,
+            "pressing": 90,
+            "air_cooling": 45,
+            "winter_water_cooling": 90,
+            "summer_water_cooling": 105
+        },
+        "BV-30": {
+            "name": "\u0411 30, \u0412 30",
+            "summer_total_time": 280,
+            "winter_total_time": 265,
+            "heat": 20,
+            "pressing": 105,
+            "air_cooling": 45,
+            "winter_water_cooling": 95,
+            "summer_water_cooling": 110
+        },
+        "BV-35": {
+            "name": "\u0411 35, \u0412 35",
+            "summer_total_time": 300,
+            "winter_total_time": 285,
+            "heat": 20,
+            "pressing": 120,
+            "air_cooling": 45,
+            "winter_water_cooling": 100,
+            "summer_water_cooling": 115
+        },
+        "BV-40": {
+            "name": "\u0411 40, \u0412 40",
+            "summer_total_time": 310,
+            "winter_total_time": 295,
+            "heat": 20,
+            "pressing": 125,
+            "air_cooling": 45,
+            "winter_water_cooling": 105,
+            "summer_water_cooling": 120
+        }
+
+
+    },
+    "thick plates": {
+        "BV-45": {
+            "name": "\u0411 45, \u041245",
+            "summer_total_time": 310,
+            "winter_total_time": 295,
+            "heat": 20,
+            "pressing": 135,
+            "air_cooling": 45,
+            "winter_water_cooling": 95,
+            "summer_water_cooling": 110
+        },
+        "BV-50": {
+            "name": "\u0411 50, \u0412 50",
+            "summer_total_time": 325,
+            "winter_total_time": 310,
+            "heat": 20,
+            "pressing": 145,
+            "air_cooling": 45,
+            "winter_water_cooling": 100,
+            "summer_water_cooling": 115
+        },
+        "BV-55": {
+            "name": "\u0411 55, \u0412 55",
+            "summer_total_time": 350,
+            "winter_total_time": 335,
+            "heat": 20,
+            "pressing": 165,
+            "air_cooling": 45,
+            "winter_water_cooling": 105,
+            "summer_water_cooling": 120
+        },
+        "BV-60": {
+            "name": "\u0411 60, \u0412 60",
+            "summer_total_time": 370,
+            "winter_total_time": 355,
+            "heat": 20,
+            "pressing": 180,
+            "air_cooling": 45,
+            "winter_water_cooling": 110,
+            "summer_water_cooling": 125
+        },
+        "BV-65": {
+            "name": "\u0411 65, \u0412 65",
+            "summer_total_time": 450,
+            "winter_total_time": 435,
+            "heat": 20,
+            "pressing": 250,
+            "air_cooling": 50,
+            "winter_water_cooling": 115,
+            "summer_water_cooling": 130
+        },
+        "BV-70": {
+            "name": "\u0411 70, \u0412 70",
+            "summer_total_time": 490,
+            "winter_total_time": 475,
+            "heat": 20,
+            "pressing": 275,
+            "air_cooling": 55,
+            "winter_water_cooling": 125,
+            "summer_water_cooling": 140
+        },
+        "BV-75": {
+            "name": "\u0411 75, \u0412 75",
+            "summer_total_time": 515,
+            "winter_total_time": 500,
+            "heat": 20,
+            "pressing": 295,
+            "air_cooling": 55,
+            "winter_water_cooling": 130,
+            "summer_water_cooling": 145
+        },
+        "BV-80": {
+            "name": "\u0411 80, \u0412 80",
+            "summer_total_time": 540,
+            "winter_total_time": 525,
+            "heat": 20,
+            "pressing": 315,
+            "air_cooling": 55,
+            "winter_water_cooling": 135,
+            "summer_water_cooling": 150
+        },
+        "BV-85": {
+            "name": "\u0411 85, \u0412 85",
+            "summer_total_time": 565,
+            "winter_total_time": 550,
+            "heat": 20,
+            "pressing": 335,
+            "air_cooling": 55,
+            "winter_water_cooling": 105,
+            "summer_water_cooling": 155
+        },
+        "BV-90": {
+            "name": "\u0411 90, \u0412 90",
+            "summer_total_time": 590,
+            "winter_total_time": 575,
+            "heat": 20,
+            "pressing": 335,
+            "air_cooling": 55,
+            "winter_water_cooling": 145,
+            "summer_water_cooling": 160
+        }
+
+    }
+}
