@@ -1,5 +1,4 @@
 import datetime as dt
-from color_text import out_green
 import json
 
 with open('plate.json', 'r') as file:
@@ -23,7 +22,6 @@ def default_pressing_mode(mode: dict, time=dt.datetime.now()):
 
     return f'Название: {name}, Прогрев: {start_heat}, Начало прессования: {start_pressing}, Охлождение: {start_cooler}, Водяное: {start_water}, Конец прессования: {end_pressing}'
 
-time = dt.timedelta(hours=2, minutes=0)
+time = dt.timedelta(hours=16, minutes=50)
 
-print(default_pressing_mode(data['thin_plates']['BV-40'], time))
-#print(data['thin_plates']['BV-40'])
+print(default_pressing_mode(data['thin_plates']['BV-30'], time))
