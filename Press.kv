@@ -8,13 +8,6 @@
         Label:
             text: 'Фанпласт помошник'
             font_size: 20
-
-        Button:
-            text: 'Создать расписание'
-            background_color: [.13, .78, 0, 1]
-            size_hint: [.6, .4]
-            pos_hint:{'center_x': 0.5,}
-            on_press: root.manager.current = 'schedule'
         
         Button:
             text: 'Расчитать время'
@@ -22,45 +15,6 @@
             size_hint: [.6, .4]
             pos_hint:{'center_x': 0.5,}
             on_press: root.manager.current = 'modes'
-
-
-<ScheduleScreen>:
-    BoxLayout:
-        orientation: 'vertical'
-        spacing: 10
-        size_hint: [1, .9]
-        pos_hint:{'center_x': .5, 'center_y': .45}
-
-        Button:
-            text: 'ДСП-Б'
-            background_color: [.39, .67, .82, 1]
-            size_hint: [None, None]
-            size: [100, 40]
-            pos_hint:{'center_x': 0.5,}
-            on_press: root.add_plate()
-        
-        Button:
-            text: 'ДСП-В'
-            background_color: [.39, .67, .82, 1]
-            size_hint: [None, None]
-            size: [100, 40]
-            pos_hint:{'center_x': .5,}
-        
-        Button:
-            text: 'Посмотреть'
-            background_color: [.13, .78, 0, 1]
-            size_hint: [None, None]
-            size: [100, 40]
-            pos_hint:{'center_x': .5,}
-        
-        Button:
-            text: 'Назад'
-            background_color: [.96, .19, .19, 1]
-            size_hint: [None, None]
-            size: [50, 20]
-            pos_hint:{'center_x': .06, 'center_y': .96}
-            on_press: root.manager.current = 'main'
-
 
     
 <ScheduleModesScreen>:
