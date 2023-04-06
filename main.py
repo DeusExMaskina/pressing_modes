@@ -8,6 +8,7 @@ from kivy.uix.label import Label
 from kivy.uix.textinput import TextInput
 from kivy.config import Config
 from kivy.properties import ObjectProperty
+from kivy.lang import Builder
 
 import datetime as dt
 import json
@@ -152,6 +153,9 @@ class ScheduleModesScreen(Screen):
         window.add_widget(bl)       
 
         window.open()
+
+
+kv=Builder.load_file('Press.kv')
 
 
 class PressApp(App):
