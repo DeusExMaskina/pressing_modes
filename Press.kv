@@ -16,62 +16,170 @@
             pos_hint:{'center_x': 0.5,}
             on_press: root.manager.current = 'modes'
 
-    
+
 <ScheduleModesScreen>:
-    time_btn: btn
     hour_input: hour
     minute_input: minute
+    check_w: winter
 
     BoxLayout:
         orientation: 'vertical'
         spacing: 10
-        size_hint: [1, .5]
-        pos_hint:{'center_x': .5, 'center_y': .45}
-
-        BoxLayout:
-            spacing: 10
-            size_hint: [.45, .3]
-            pos_hint:{'center_x': .54, 'center_y': .45}
-
-            TextInput:
-                id: hour
-                multiline: False
-                size_hint: [None, None]
-                size: [60, 30]
-            
-            Label:
-                text: ':'
-                font_size: 26
-                size_hint: [None, None]
-                size: [10, 38]
-            
-            TextInput:
-                id: minute
-                multiline: False
-                size_hint: [None, None]
-                size: [60, 30]
-
-        Button:
-            id: btn
-            text: 'Выбрать размер'
-            background_color: [.39, .67, .82, 1]
-            size_hint: [None, None]
-            size: [200, 40]
-            pos_hint:{'center_x': .5,}
-            on_press: root.get_time_btn()
+        size_hint: [1, 1]
         
+        BoxLayout:
+            spacing: 5
+            padding: 15
+            size_hint: [1, 1]
+            orientation: 'vertical'
+
+            FloatLayout:
+                pos_hint:{'center_x': 0.5, 'center_y': 0.5}
+                size_hint: [1, 0.4]
+
+                TextInput:
+                    id: hour
+                    multiline: False
+                    size_hint: [0.15, 0.1]
+                    pos_hint:{'center_x': .42, 'center_y': .1}
+                    
+                Label:
+                    text: ':'
+                    font_size: 26
+                    size_hint: [None, None]
+                    size: [10, 38]
+                    pos_hint:{'center_x': .5, 'center_y': .1}
+                    
+                TextInput:
+                    id: minute
+                    multiline: False
+                    size_hint: [0.15, 0.1]
+                    pos_hint:{'center_x': .58, 'center_y': .1}
+
+            ToggleButton:
+                id: winter
+                text: 'Зимнее'
+                group: 'season'
+                size_hint: [None, None]
+                size: [200, 40]
+                pos_hint:{'center_x': .5,}
+            ToggleButton:
+                text: 'Летнее'
+                group: 'season'
+                size_hint: [None, None]
+                size: [200, 40]
+                pos_hint:{'center_x': .5,}
+            
+            Button:
+                text: 'Выбрать размер'
+                background_color: [.39, .67, .82, 1]
+                size_hint: [None, None]
+                size: [200, 40]
+                pos_hint:{'center_x': .5,}
+                on_press: root.get_size_plate()
+        
+            Button:
+                text: 'Расчитать время в ручную'
+                background_color: [.13, .78, 0, 1]
+                size_hint: [None, None]
+                size: [200, 40]
+                pos_hint:{'center_x': .5,}
+                on_press: root.manager.current = 'manual_modes'
+
+            Button:
+                text: 'Выход'
+                background_color: [.96, .19, .19, 1]
+                size_hint: [None, None]
+                size: [200, 40]
+                pos_hint:{'center_x': .5,}
+                on_press: root.manager.current = 'main'
+
+
+<ScheduleModesScreenManual>:
+    inp_heat: heat
+    inp_pressing: pressing
+    inp_air: air
+    inp_water: water
+    hour_input: hour
+    minute_input: minute
+
+    FloatLayout:
+        spacing: 10
+        pos_hint:{'center_x': .5, 'center_y': .5}
+
+
+        TextInput:
+            id: hour
+            multiline: False
+            size_hint: [0.1, 0.05]
+            pos_hint:{'center_x': .44, 'center_y': .85}
+            
+        Label:
+            text: ':'
+            font_size: 26
+            size_hint: [None, None]
+            size: [10, 38]
+            pos_hint:{'center_x': .5, 'center_y': .851}
+            
+        TextInput:
+            id: minute
+            multiline: False
+            size_hint: [0.1, 0.05]
+            pos_hint:{'center_x': .56, 'center_y': .85}
+
+        Label:
+            text: 'Прогрев'
+            pos_hint:{'center_x': .5, 'center_y': .8}
+        TextInput:
+            id: heat
+            text: '20'
+            multiline: False
+            size_hint: [None, None]
+            size: [95, 30]
+            pos_hint:{'center_x': .5, 'center_y': .75}
+        
+        Label:
+            text: 'Пресование'
+            pos_hint:{'center_x': .5, 'center_y': .7}
+        TextInput:
+            id: pressing
+            multiline: False
+            size_hint: [None, None]
+            size: [95, 30]
+            pos_hint:{'center_x': .5, 'center_y': .65}
+        
+        Label:
+            text: 'Воздушное'
+            pos_hint:{'center_x': .5, 'center_y': .6}
+        TextInput:
+            id: air
+            multiline: False
+            size_hint: [None, None]
+            size: [95, 30]
+            pos_hint:{'center_x': .5, 'center_y': .55}
+        
+        Label:
+            text: 'Водяное'
+            pos_hint:{'center_x': .5, 'center_y': .5}
+        TextInput:
+            id: water
+            multiline: False
+            size_hint: [None, None]
+            size: [95, 30]
+            pos_hint:{'center_x': .5, 'center_y': .45}
+
         Button:
-            text: 'Расчитать время в ручную'
+            text: 'Расчитать'
             background_color: [.13, .78, 0, 1]
             size_hint: [None, None]
-            size: [200, 40]
-            pos_hint:{'center_x': .5,}
+            size: [200, 30]
+            pos_hint:{'center_x': .5, 'center_y': .30}
+            on_press: root.get_manual_mode()
 
         Button:
-            text: 'Назад'
+            text: 'Выход'
             background_color: [.96, .19, .19, 1]
             size_hint: [None, None]
-            size: [50, 20]
-            pos_hint:{'center_x': .06, 'center_y': .96}
+            size: [200, 30]
+            pos_hint:{'center_x': .5, 'center_y': .25}
             on_press: root.manager.current = 'main'
-
