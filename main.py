@@ -1,9 +1,6 @@
 from kivy.config import Config
 Config.set('graphics', 'resizable', 0)
 
-from kivy.core.window import Window
-Window.size = (400, 600)
-
 
 import json
 import datetime as dt
