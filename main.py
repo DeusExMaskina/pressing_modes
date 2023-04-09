@@ -48,12 +48,14 @@ class ScheduleModesScreen(Screen):
         gl.add_widget(Button(
             text='Назад',
             background_color=[.96, .19, .19, 1],
+            font_size='25sp',
             on_press=window.dismiss
         ))
 
         for i in self.data:
             gl.add_widget(Button(
                 text=i,
+                font_size='25sp',
                 on_press=self.get_modes
             ))
 
@@ -94,15 +96,15 @@ class ScheduleModesScreen(Screen):
         pressing_end = time
 
         name_label = Label(
-            text=f'Размер: {str(mark)}', font_size=24, size_hint=(1, .2))
+            text=f'Размер: {str(mark)}', font_size='25sp', size_hint=(1, .2))
         heat_label = Label(text=f'Прогрев:\n {str(heat_start)} - {str(pressing_start)}',
-                           font_size=24, size_hint=(1, .2), halign='center')
+                           font_size='25sp', size_hint=(1, .2), halign='center')
         pressing_label = Label(
-            text=f'Прессование:\n {str(pressing_start)} - {str(air_cooler_start)}', font_size=24, size_hint=(1, .2), halign='center')
+            text=f'Прессование:\n {str(pressing_start)} - {str(air_cooler_start)}', font_size='25sp', size_hint=(1, .2), halign='center')
         air_cooler_label = Label(
-            text=f'Воздушное охлаждение:\n {str(air_cooler_start)} - {str(water_cooler_start)}', font_size=24, size_hint=(1, .2), halign='center')
+            text=f'Воздушное охлаждение:\n {str(air_cooler_start)} - {str(water_cooler_start)}', font_size='25sp', size_hint=(1, .2), halign='center')
         water_cooler_label = Label(
-            text=f'Водяное охлаждение:\n {str(water_cooler_start)} - {str(pressing_end)}', font_size=24, size_hint=(1, .2), halign='center')
+            text=f'Водяное охлаждение:\n {str(water_cooler_start)} - {str(pressing_end)}', font_size='25sp', size_hint=(1, .2), halign='center')
 
         bl = BoxLayout(orientation='vertical', spacing=5)
         bl.add_widget(name_label)
@@ -114,6 +116,7 @@ class ScheduleModesScreen(Screen):
             text='Назад',
             background_color=[.96, .19, .19, 1],
             size_hint=[1, .1],
+            font_size='25sp',
             on_press=window.dismiss
         ))
 
@@ -164,13 +167,13 @@ class ScheduleModesScreenManual(Screen):
         pressing_end = time
 
         heat_label = Label(text=f'Прогрев:\n {str(heat_start)} - {str(pressing_start)}',
-                           font_size=24, size_hint=(1, .2), halign='center')
+                           font_size='25sp', size_hint=(1, .2), halign='center')
         pressing_label = Label(
-            text=f'Прессование: {str(pressing_start)} - {str(air_cooler_start)}', font_size=24, size_hint=(1, .2), halign='center')
+            text=f'Прессование: {str(pressing_start)} - {str(air_cooler_start)}', font_size='25sp', size_hint=(1, .2), halign='center')
         air_cooler_label = Label(
-            text=f'Воздушное охлаждение:\n {str(air_cooler_start)} - {str(water_cooler_start)}', font_size=24, size_hint=(1, .2), halign='center')
+            text=f'Воздушное охлаждение:\n {str(air_cooler_start)} - {str(water_cooler_start)}', font_size='25sp', size_hint=(1, .2), halign='center')
         water_cooler_label = Label(
-            text=f'Водяное охлаждение:\n {str(water_cooler_start)} - {str(pressing_end)}', font_size=24, size_hint=(1, .2), halign='center')
+            text=f'Водяное охлаждение:\n {str(water_cooler_start)} - {str(pressing_end)}', font_size='25sp', size_hint=(1, .2), halign='center')
 
         bl = BoxLayout(orientation='vertical', spacing=5)
         bl.add_widget(heat_label)
@@ -181,6 +184,7 @@ class ScheduleModesScreenManual(Screen):
             text='Назад',
             background_color=[.96, .19, .19, 1],
             size_hint=[1, 0.1],
+            font_size='25sp',
             on_press=window.dismiss
         ))
 
